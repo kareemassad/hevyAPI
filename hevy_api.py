@@ -37,7 +37,7 @@ def login_cli():
 @app.post("/login")
 def login(user: str, password: str):
     home_folder = str(Path.home())
-    utb_folder = home_folder + "/.underthebar"
+    utb_folder = home_folder + "/.home"
 
     if not os.path.exists(utb_folder):
         os.makedirs(utb_folder)
